@@ -6,39 +6,40 @@ import { Github, Linkedin, Mail, ExternalLink, Award, Code, BookOpen, Briefcase 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
+      {/* Cabecalho */}
       <section className="relative py-20 px-4 bg-gradient-to-br from-primary/10 via-background to-accent/10">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-            {/* Profile Image Placeholder */}
+            {/* Perfil */}
             <div className="w-48 h-48 rounded-full bg-muted flex items-center justify-center border-4 border-primary/20 shadow-lg">
               <span className="text-muted-foreground text-sm">Sua Foto</span>
+              <img src="GabrielMendesR/portfolio-final/public/foto_perfil.jpg" alt="Foto Perfil"></img>
             </div>
             
             <div className="flex-1 text-center md:text-left">
-              {/* University Logo Placeholder */}
+              {/* Universidade */}
               <div className="mb-4 inline-block">
                 <div className="w-24 h-24 bg-muted rounded-lg flex items-center justify-center">
-                  <span className="text-xs text-muted-foreground">Logo UniCesumar</span>
+                  <img src="GabrielMendesR/portfolio-final/public/UNIFILlogo.png" alt="Logo Unifil"></img>
                 </div>
               </div>
               
               <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Seu Nome Completo
+                Gabriel Mendes Rodrigues
               </h1>
               <p className="text-xl text-muted-foreground mb-6">
-                Estudante de [Seu Curso] | Desenvolvedor(a)
+                Estudante de Ciência da Computação | Desenvolvedor(a)
               </p>
               
               <div className="flex gap-4 justify-center md:justify-start">
                 <Button variant="default" size="lg" asChild>
-                  <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/GabrielMendesR" target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-5 w-5" />
                     GitHub
                   </a>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a href="mailto:seuemail@exemplo.com">
+                  <a href="mendes@edu.unifil.br">
                     <Mail className="mr-2 h-5 w-5" />
                     Contato
                   </a>
@@ -49,23 +50,22 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Section */}
+      {/* Sobre */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold mb-8 text-center">Sobre Mim</h2>
           <Card>
             <CardContent className="pt-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                [Escreva aqui uma breve descrição pessoal sobre você, sua jornada acadêmica, 
-                suas motivações e o que você busca na área de tecnologia. Exemplo: "Sou estudante 
-                de Ciência da Computação apaixonado por desenvolvimento de software e inovação..."]
+                Meu nome é Gabriel, atualmente estou no último ano de Ciência da Computação
+                na UNIFIL e esse é meu Portfólio :)
               </p>
             </CardContent>
           </Card>
         </div>
       </section>
 
-      {/* Skills & Interests Section */}
+      {/* Habilidades e Interesses */}
       <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold mb-8 text-center">Habilidades & Interesses</h2>
@@ -80,11 +80,14 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  <Badge>JavaScript</Badge>
                   <Badge>Python</Badge>
-                  <Badge>React</Badge>
-                  <Badge>Node.js</Badge>
-                  <Badge variant="secondary">Adicione suas tecnologias</Badge>
+                  <Badge>Kotlin</Badge>
+                  <Badge>Java</Badge>
+                  <Badge>HTML</Badge>
+                  <Badge>CSS</Badge>
+                  <Badge>JavaScript</Badge>
+                  <Badge>SQL</Badge>
+                  <Badge>GIT</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -98,9 +101,9 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Desenvolvimento Web</Badge>
                   <Badge variant="outline">Inteligência Artificial</Badge>
-                  <Badge variant="outline">Adicione seus interesses</Badge>
+                  <Badge variant="outline">Data Science</Badge>
+                  <Badge variant="outline">Desenvolvimento Backend</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -108,7 +111,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Projects Section */}
+      {/* Projetos */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold mb-8 text-center">Projetos Acadêmicos</h2>
@@ -117,19 +120,15 @@ const Index = () => {
             {/* TCC */}
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <CardTitle className="text-lg">Trabalho de Conclusão de Curso</CardTitle>
+                <CardTitle className="text-lg">Trabalho de Conclusão de Curso (TCC)</CardTitle>
                 <CardDescription>TCC</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-4">
-                  [Descreva seu TCC aqui - título, área de pesquisa, objetivos principais]
+                  Desenvolvimento da pesquisa "Como a Inteligência Artificial Impacta no Mercado de Trabalho e na Empregabilidade"
                 </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="secondary">Tecnologia 1</Badge>
-                  <Badge variant="secondary">Tecnologia 2</Badge>
-                </div>
                 <Button variant="outline" size="sm" className="w-full">
-                  <ExternalLink className="mr-2 h-4 w-4" />
+                  <ExternalLink className="mr-2 h-4 w-4" src="https://drive.google.com/file/d/1hNYSiN7Ez3Icbwt7bpmZYBN7ZkRvvRAU/view?usp=sharing"/>
                   Ver Projeto
                 </Button>
               </CardContent>
@@ -139,18 +138,19 @@ const Index = () => {
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle className="text-lg">Projeto de Estágio</CardTitle>
-                <CardDescription>Estágio - [Empresa]</CardDescription>
+                <CardDescription>Empresa - Coramais Comunicação Visual</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-4">
-                  [Descreva o projeto desenvolvido durante o estágio, suas responsabilidades e aprendizados]
+                  Desenvolvimento do Projeto COSERV, uma plataforma para a empresa Coramais conseguir gerenciar as 
+                  Ordens de Serviço(OS) e um aplicativo para os clientes acompanharem os detalhes e serviços em andamento 
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="secondary">Tecnologia 1</Badge>
-                  <Badge variant="secondary">Tecnologia 2</Badge>
+                  <Badge variant="secondary">Kotlin</Badge>
+                  <Badge variant="secondary">Java</Badge>
                 </div>
                 <Button variant="outline" size="sm" className="w-full">
-                  <ExternalLink className="mr-2 h-4 w-4" />
+                  <ExternalLink className="mr-2 h-4 w-4" src="https://github.com/GabrielMendesR/ProjetoEstagio"/>
                   Ver Projeto
                 </Button>
               </CardContent>
@@ -159,80 +159,29 @@ const Index = () => {
             {/* Extensão */}
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <CardTitle className="text-lg">Projeto de Extensão</CardTitle>
-                <CardDescription>Extensão Universitária</CardDescription>
+                <CardTitle className="text-lg">Projeto de Extensão - ONGWeb</CardTitle>
+                <CardDescription>Projeto Comunitário</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-4">
-                  [Descreva seu projeto de extensão, impacto na comunidade e tecnologias utilizadas]
+                  O ONGWeb é uma iniciativa voltada para o desenvolvimento de sites personalizados e acessíveis, 
+                  projetados especificamente para atender às necessidades únicas de ONGs de todos os tipos e tamanhos. 
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="secondary">Tecnologia 1</Badge>
-                  <Badge variant="secondary">Tecnologia 2</Badge>
+                  <Badge variant="secondary">HTML</Badge>
+                  <Badge variant="secondary">JavaScript</Badge>
                 </div>
                 <Button variant="outline" size="sm" className="w-full">
-                  <ExternalLink className="mr-2 h-4 w-4" />
+                  <ExternalLink className="mr-2 h-4 w-4" src="https://github.com/GabrielMendesR/WebSite_ONG" />
                   Ver Projeto
                 </Button>
-              </CardContent>
-            </Card>
-
-            {/* Projeto do Curso 1 */}
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-lg">Nome do Projeto</CardTitle>
-                <CardDescription>Disciplina X - Semestre Y</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground mb-4">
-                  [Descreva o projeto desenvolvido na disciplina]
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="secondary">Tecnologia 1</Badge>
-                </div>
-                <Button variant="outline" size="sm" className="w-full">
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  Ver Projeto
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Projeto do Curso 2 */}
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-lg">Nome do Projeto</CardTitle>
-                <CardDescription>Disciplina X - Semestre Y</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground mb-4">
-                  [Descreva o projeto desenvolvido na disciplina]
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="secondary">Tecnologia 1</Badge>
-                </div>
-                <Button variant="outline" size="sm" className="w-full">
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  Ver Projeto
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Adicione mais projetos conforme necessário */}
-            <Card className="hover:shadow-lg transition-shadow border-dashed">
-              <CardHeader>
-                <CardTitle className="text-lg text-muted-foreground">Adicione Mais Projetos</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  Duplique este card para adicionar mais projetos do curso
-                </p>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Bimester Works Section */}
+      {/* Trabalhos Bimestre */}
       <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold mb-8 text-center">Trabalhos do Bimestre</h2>
@@ -244,14 +193,14 @@ const Index = () => {
                   <Briefcase className="h-5 w-5 text-primary" />
                   Trabalho 1
                 </CardTitle>
-                <CardDescription>Disciplina / Matéria</CardDescription>
+                <CardDescription>Trabalho de compiladores</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-4">
-                  [Descreva o trabalho realizado neste bimestre - tema, objetivos e resultados]
+                  Desenvolvimento de um Algoritimo implementando um parser LR(0) em C
                 </p>
                 <Button variant="outline" size="sm">
-                  <ExternalLink className="mr-2 h-4 w-4" />
+                  <ExternalLink className="mr-2 h-4 w-4" src="https://github.com/GabrielMendesR/Trabalho-Compiladores-Algoritimo-LR-0-" />
                   Ver Trabalho
                 </Button>
               </CardContent>
@@ -282,14 +231,15 @@ const Index = () => {
                   <Briefcase className="h-5 w-5 text-primary" />
                   Trabalho 3
                 </CardTitle>
-                <CardDescription>Disciplina / Matéria</CardDescription>
+                <CardDescription>IA: ALG. EVOLUTIVOS</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-4">
-                  [Descreva o trabalho realizado neste bimestre]
+                  Desenvolvimento de um algoritmo genético (GA) para escolher automaticamente as melhores colunas (features) do dataset de doenças cardíacas do Kaggle, 
+                  maximizando a acurácia de um modelo de Machine Learning (nesse caso regressão logística).
                 </p>
                 <Button variant="outline" size="sm">
-                  <ExternalLink className="mr-2 h-4 w-4" />
+                  <ExternalLink className="mr-2 h-4 w-4" src="https://colab.research.google.com/drive/1-4bUzc7iZTnv4hYy5G-yjLQjbJSnQfJ_#scrollTo=-W88oPjlFUSS" />
                   Ver Trabalho
                 </Button>
               </CardContent>
@@ -309,7 +259,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Hackathons & Events Section */}
+      {/* Eventos */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold mb-8 text-center">Hackathons & Eventos</h2>
@@ -319,18 +269,12 @@ const Index = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Award className="h-5 w-5 text-accent" />
-                  Nome do Hackathon/Evento
+                  Ideathon Smart Agro 2023
                 </CardTitle>
-                <CardDescription>Data do Evento - Local/Online</CardDescription>
+                <CardDescription>17/03/2023 a 19/03/2023</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground mb-4">
-                  [Descreva sua participação, o projeto desenvolvido, prêmios conquistados e aprendizados]
-                </p>
-                <div className="flex gap-2">
-                  <Badge>Conquista/Prêmio</Badge>
-                  <Badge variant="outline">Tecnologia Utilizada</Badge>
-                </div>
+                <img src="GabrielMendesR/portfolio-final/public/certificadoSmartAgro.pdf"  alt="Certificado"></img>
               </CardContent>
             </Card>
 
@@ -338,28 +282,12 @@ const Index = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Award className="h-5 w-5 text-accent" />
-                  Nome do Evento/Workshop
+                  Hackathon Smart Agro 2023 (Curso)
                 </CardTitle>
-                <CardDescription>Data do Evento - Local/Online</CardDescription>
+                <CardDescription>14/04/2023 a 16/04/2023</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground mb-4">
-                  [Descreva o evento, workshops, palestras assistidas e networking]
-                </p>
-                <div className="flex gap-2">
-                  <Badge variant="outline">Tema do Evento</Badge>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-dashed">
-              <CardHeader>
-                <CardTitle className="text-muted-foreground">Adicione Mais Eventos</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  Duplique este card para adicionar mais participações em eventos
-                </p>
+                <img src="GabrielMendesR/portfolio-final/public/CertificadoHackathonSmartAgro2023.pdf" alt="Certificado"></img>
               </CardContent>
             </Card>
           </div>
@@ -371,25 +299,25 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-center md:text-left">
-              <h3 className="font-bold text-lg mb-2">Seu Nome</h3>
+              <h3 className="font-bold text-lg mb-2">Gabriel Mendes Rodrigues</h3>
               <p className="text-sm text-muted-foreground">
-                Portfólio Acadêmico - [Seu Curso]
+                Portfólio Acadêmico - Ciência da Comnputação
               </p>
             </div>
             
             <div className="flex gap-4">
               <Button variant="outline" size="icon" asChild>
-                <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/GabrielMendesR" target="_blank" rel="noopener noreferrer">
                   <Github className="h-5 w-5" />
                 </a>
               </Button>
               <Button variant="outline" size="icon" asChild>
-                <a href="https://linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/gabriel-mendes-rodrigues-1275a6241/?originalSubdomain=br" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
               <Button variant="outline" size="icon" asChild>
-                <a href="mailto:seuemail@exemplo.com">
+                <a href="mendes@edu.unifil.br">
                   <Mail className="h-5 w-5" />
                 </a>
               </Button>
@@ -397,7 +325,7 @@ const Index = () => {
           </div>
           
           <div className="text-center mt-8 text-sm text-muted-foreground">
-            <p>© 2024 Seu Nome. Todos os direitos reservados.</p>
+            <p>© 2025 Gabriel Mendes Rodrigues. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
