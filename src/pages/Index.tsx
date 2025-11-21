@@ -27,6 +27,7 @@ const Index = () => {
                 className="w-full h-full object-contain"
               />
             </div>
+            <span>UNIFIL</span>
           </div>
           
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
@@ -132,9 +133,11 @@ const Index = () => {
                 <p className="text-sm text-muted-foreground mb-4">
                   Desenvolvimento da pesquisa "Como a Inteligência Artificial Impacta no Mercado de Trabalho e na Empregabilidade"
                 </p>
-                <Button variant="outline" size="sm" className="w-full">
-                  [Abrir no Drive](https://drive.google.com/file/d/1hNYSiN7Ez3Icbwt7bpmZYBN7ZkRvvRAU/view?usp=sharing)
-                  Ver Projeto
+                 <Button variant="outline" size="sm" className="w-full" asChild>
+                    <a href="https://drive.google.com/file/d/1hNYSiN7Ez3Icbwt7bpmZYBN7ZkRvvRAU/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Ver TCC Completo
+                    </a>
                 </Button>
               </CardContent>
             </Card>
@@ -154,9 +157,11 @@ const Index = () => {
                   <Badge variant="secondary">Kotlin</Badge>
                   <Badge variant="secondary">Java</Badge>
                 </div>
-                <Button variant="outline" size="sm" className="w-full">
-                  [Abrir no GitHub](https://github.com/GabrielMendesR/ProjetoEstagio)
-                  Ver Projeto
+                <Button variant="outline" size="sm" className="w-full" asChild>
+                    <a href="https://github.com/GabrielMendesR/ProjetoEstagio" target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Ver TCC Completo
+                    </a>
                 </Button>
               </CardContent>
             </Card>
@@ -176,9 +181,11 @@ const Index = () => {
                   <Badge variant="secondary">HTML</Badge>
                   <Badge variant="secondary">JavaScript</Badge>
                 </div>
-                <Button variant="outline" size="sm" className="w-full">
-                  [Abrir no GitHub](https://github.com/GabrielMendesR/WebSite_ONG)
-                  Ver Projeto
+                <Button variant="outline" size="sm" className="w-full" asChild>
+                    <a href="https://github.com/GabrielMendesR/WebSite_ONG" target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Ver TCC Completo
+                    </a>
                 </Button>
               </CardContent>
             </Card>
@@ -204,9 +211,11 @@ const Index = () => {
                 <p className="text-sm text-muted-foreground mb-4">
                   Desenvolvimento de um Algoritimo implementando um parser LR(0) em C
                 </p>
-                <Button variant="outline" size="sm">
-                  [Abrir no GitHub](https://github.com/GabrielMendesR/Trabalho-Compiladores-Algoritimo-LR-0-)
-                  Ver Trabalho
+                <Button variant="outline" size="sm" className="w-full" asChild>
+                    <a href="https://github.com/GabrielMendesR/Trabalho-Compiladores-Algoritimo-LR-0-" target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Ver TCC Completo
+                    </a>
                 </Button>
               </CardContent>
             </Card>
@@ -224,9 +233,11 @@ const Index = () => {
                   Desenvolvimento de um algoritmo genético (GA) para escolher automaticamente as melhores colunas (features) do dataset de doenças cardíacas do Kaggle, 
                   maximizando a acurácia de um modelo de Machine Learning (nesse caso regressão logística).
                 </p>
-                <Button variant="outline" size="sm">
-                  [Abrir no Colab](https://colab.research.google.com/drive/1-4bUzc7iZTnv4hYy5G-yjLQjbJSnQfJ_#scrollTo=-W88oPjlFUSS)
-                  Ver Trabalho
+                 <Button variant="outline" size="sm" className="w-full" asChild>
+                    <a href="https://colab.research.google.com/drive/1-4bUzc7iZTnv4hYy5G-yjLQjbJSnQfJ_#scrollTo=-W88oPjlFUSS" target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Ver TCC Completo
+                    </a>
                 </Button>
               </CardContent>
             </Card>
@@ -249,7 +260,7 @@ const Index = () => {
                 <CardDescription>17/03/2023 a 19/03/2023</CardDescription>
               </CardHeader>
               <CardContent>
-                <img src="../../public/certificadoSmartAgro.pdf"  alt="Certificado"></img>
+                <img src="../../public/CertificadoIdeathon.png"  alt="Certificado"></img>
               </CardContent>
             </Card>
 
@@ -262,7 +273,7 @@ const Index = () => {
                 <CardDescription>14/04/2023 a 16/04/2023</CardDescription>
               </CardHeader>
               <CardContent>
-                <img src="../../public/CertificadoHackathonSmartAgro2023.pdf" alt="Certificado"></img>
+                <img src="../../public/CertificadoHackathon.png" alt="Certificado"></img>
               </CardContent>
             </Card>
           </div>
