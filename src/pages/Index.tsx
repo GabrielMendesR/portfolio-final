@@ -6,49 +6,54 @@ import { Github, Linkedin, Mail, ExternalLink, Award, Code, BookOpen, Briefcase 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Cabecalho */}
-      <section className="relative py-20 px-4 bg-gradient-to-br from-primary/10 via-background to-accent/10">
-        <div className="container mx-auto max-w-6xl">
-          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-            {/* Perfil */}
-            <div className="w-48 h-48 rounded-full bg-muted flex items-center justify-center border-4 border-primary/20 shadow-lg">
-              <span className="text-muted-foreground text-sm">Sua Foto</span>
-              <img src="../../public/foto_perfil.jpg" alt="Foto Perfil"></img>
-            </div>
-            
-            <div className="flex-1 text-center md:text-left">
-              {/* Universidade */}
-              <div className="mb-4 inline-block">
-                <div className="w-24 h-24 bg-muted rounded-lg flex items-center justify-center">
-                  <img src="../../public/UNIFILlogo.png" alt="Logo Unifil"></img>
-                </div>
-              </div>
-              
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Gabriel Mendes Rodrigues
-              </h1>
-              <p className="text-xl text-muted-foreground mb-6">
-                Estudante de Ciência da Computação | Desenvolvedor(a)
-              </p>
-              
-              <div className="flex gap-4 justify-center md:justify-start">
-                <Button variant="default" size="lg" asChild>
-                  <a href="https://github.com/GabrielMendesR" target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-2 h-5 w-5" />
-                    GitHub
-                  </a>
-                </Button>
-                <Button variant="outline" size="lg" asChild>
-                  <a href="mendes@edu.unifil.br">
-                    <Mail className="mr-2 h-5 w-5" />
-                    Contato
-                  </a>
-                </Button>
-              </div>
+  {/* Cabecalho */}
+  <section className="relative py-20 px-4 bg-gradient-to-br from-primary/10 via-background to-accent/10">
+    <div className="container mx-auto max-w-6xl">
+      <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        <div className="w-48 h-48 rounded-full bg-muted border-4 border-primary/20 shadow-lg overflow-hidden">
+          <img 
+            src="../../public/foto_perfil.jpg" 
+            alt="Foto Perfil" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        
+        <div className="flex-1 text-center md:text-left">
+          <div className="mb-4 inline-block">
+            <div className="w-32 h-32 bg-muted rounded-lg flex items-center justify-center p-2">
+              <img 
+                src="../../public/UNIFILlogo.png" 
+                alt="Logo Unifil" 
+                className="w-full h-full object-contain"
+              />
             </div>
           </div>
+          
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            Gabriel Mendes Rodrigues
+          </h1>
+          <p className="text-xl text-muted-foreground mb-6">
+            Estudante de Ciência da Computação | Desenvolvedor
+          </p>
+          
+          <div className="flex gap-4 justify-center md:justify-start">
+            <Button variant="default" size="lg" asChild>
+              <a href="https://github.com/GabrielMendesR" target="_blank" rel="noopener noreferrer">
+                <Github className="mr-2 h-5 w-5" />
+                GitHub
+              </a>
+            </Button>
+            <Button variant="outline" size="lg" asChild>
+              <a href="mailto:mendes@edu.unifil.br">
+                <Mail className="mr-2 h-5 w-5" />
+                Contato
+              </a>
+            </Button>
+          </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
       {/* Sobre */}
       <section className="py-16 px-4">
@@ -244,7 +249,7 @@ const Index = () => {
                 <CardDescription>17/03/2023 a 19/03/2023</CardDescription>
               </CardHeader>
               <CardContent>
-                <img src="GabrielMendesR/portfolio-final/public/certificadoSmartAgro.pdf"  alt="Certificado"></img>
+                <img src="../../public/certificadoSmartAgro.pdf"  alt="Certificado"></img>
               </CardContent>
             </Card>
 
@@ -257,7 +262,7 @@ const Index = () => {
                 <CardDescription>14/04/2023 a 16/04/2023</CardDescription>
               </CardHeader>
               <CardContent>
-                <img src="GabrielMendesR/portfolio-final/public/CertificadoHackathonSmartAgro2023.pdf" alt="Certificado"></img>
+                <img src="../../public/CertificadoHackathonSmartAgro2023.pdf" alt="Certificado"></img>
               </CardContent>
             </Card>
           </div>
