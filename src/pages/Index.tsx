@@ -13,14 +13,14 @@ const Index = () => {
             {/* Perfil */}
             <div className="w-48 h-48 rounded-full bg-muted flex items-center justify-center border-4 border-primary/20 shadow-lg">
               <span className="text-muted-foreground text-sm">Sua Foto</span>
-              <img src="GabrielMendesR/portfolio-final/public/foto_perfil.jpg" alt="Foto Perfil"></img>
+              <img src="../../public/foto_perfil.jpg" alt="Foto Perfil"></img>
             </div>
             
             <div className="flex-1 text-center md:text-left">
               {/* Universidade */}
               <div className="mb-4 inline-block">
                 <div className="w-24 h-24 bg-muted rounded-lg flex items-center justify-center">
-                  <img src="GabrielMendesR/portfolio-final/public/UNIFILlogo.png" alt="Logo Unifil"></img>
+                  <img src="../../public/UNIFILlogo.png" alt="Logo Unifil"></img>
                 </div>
               </div>
               
@@ -128,7 +128,7 @@ const Index = () => {
                   Desenvolvimento da pesquisa "Como a Inteligência Artificial Impacta no Mercado de Trabalho e na Empregabilidade"
                 </p>
                 <Button variant="outline" size="sm" className="w-full">
-                  <ExternalLink className="mr-2 h-4 w-4" src="https://drive.google.com/file/d/1hNYSiN7Ez3Icbwt7bpmZYBN7ZkRvvRAU/view?usp=sharing"/>
+                  [Abrir no Drive](https://drive.google.com/file/d/1hNYSiN7Ez3Icbwt7bpmZYBN7ZkRvvRAU/view?usp=sharing)
                   Ver Projeto
                 </Button>
               </CardContent>
@@ -150,7 +150,7 @@ const Index = () => {
                   <Badge variant="secondary">Java</Badge>
                 </div>
                 <Button variant="outline" size="sm" className="w-full">
-                  <ExternalLink className="mr-2 h-4 w-4" src="https://github.com/GabrielMendesR/ProjetoEstagio"/>
+                  [Abrir no GitHub](https://github.com/GabrielMendesR/ProjetoEstagio)
                   Ver Projeto
                 </Button>
               </CardContent>
@@ -172,7 +172,7 @@ const Index = () => {
                   <Badge variant="secondary">JavaScript</Badge>
                 </div>
                 <Button variant="outline" size="sm" className="w-full">
-                  <ExternalLink className="mr-2 h-4 w-4" src="https://github.com/GabrielMendesR/WebSite_ONG" />
+                  [Abrir no GitHub](https://github.com/GabrielMendesR/WebSite_ONG)
                   Ver Projeto
                 </Button>
               </CardContent>
@@ -191,16 +191,16 @@ const Index = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Briefcase className="h-5 w-5 text-primary" />
-                  Trabalho 1
+                  Trabalho de compiladores
                 </CardTitle>
-                <CardDescription>Trabalho de compiladores</CardDescription>
+                <CardDescription>Disciplina de compiladoesr</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-4">
                   Desenvolvimento de um Algoritimo implementando um parser LR(0) em C
                 </p>
                 <Button variant="outline" size="sm">
-                  <ExternalLink className="mr-2 h-4 w-4" src="https://github.com/GabrielMendesR/Trabalho-Compiladores-Algoritimo-LR-0-" />
+                  [Abrir no GitHub](https://github.com/GabrielMendesR/Trabalho-Compiladores-Algoritimo-LR-0-)
                   Ver Trabalho
                 </Button>
               </CardContent>
@@ -210,28 +210,9 @@ const Index = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Briefcase className="h-5 w-5 text-primary" />
-                  Trabalho 2
+                  IA: ALG. EVOLUTIVOS
                 </CardTitle>
-                <CardDescription>Disciplina / Matéria</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground mb-4">
-                  [Descreva o trabalho realizado neste bimestre]
-                </p>
-                <Button variant="outline" size="sm">
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  Ver Trabalho
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Briefcase className="h-5 w-5 text-primary" />
-                  Trabalho 3
-                </CardTitle>
-                <CardDescription>IA: ALG. EVOLUTIVOS</CardDescription>
+                <CardDescription>Disciplina de Inteligência Artificial</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-4">
@@ -239,20 +220,9 @@ const Index = () => {
                   maximizando a acurácia de um modelo de Machine Learning (nesse caso regressão logística).
                 </p>
                 <Button variant="outline" size="sm">
-                  <ExternalLink className="mr-2 h-4 w-4" src="https://colab.research.google.com/drive/1-4bUzc7iZTnv4hYy5G-yjLQjbJSnQfJ_#scrollTo=-W88oPjlFUSS" />
+                  [Abrir no Colab](https://colab.research.google.com/drive/1-4bUzc7iZTnv4hYy5G-yjLQjbJSnQfJ_#scrollTo=-W88oPjlFUSS)
                   Ver Trabalho
                 </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="border-dashed">
-              <CardHeader>
-                <CardTitle className="text-muted-foreground">Adicione Mais Trabalhos</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  Duplique este card para adicionar mais trabalhos do bimestre
-                </p>
               </CardContent>
             </Card>
           </div>
