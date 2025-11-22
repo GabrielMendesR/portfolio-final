@@ -12,14 +12,14 @@ const Index = () => {
         <div className="flex flex-col sm:flex-row items-center gap-8">
           <div className="w-48 h-48 rounded-full bg-muted border-4 border-primary/20 shadow-lg overflow-hidden">
             <img 
-              src="/foto_perfil.jpg" 
+              src="foto_perfil.jpg" 
               alt="Foto Perfil" 
               className="w-full h-full object-cover"
             />
           </div>
           <div className="w-48 h-48 bg-muted rounded-lg flex items-center justify-center p-2">
             <img 
-              src="/UNIFILlogo.png" 
+              src="UNIFILlogo.png" 
               alt="Logo Unifil" 
               className="w-full h-full object-contain"
             />
