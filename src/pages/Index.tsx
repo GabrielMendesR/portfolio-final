@@ -63,7 +63,7 @@ const Index = () => {
           <Card>
             <CardContent className="pt-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Meu nome é Gabriel, atualmente estou no último ano de Ciência da Computação
+                Meu nome é Gabriel Mendes Rodrigues, atualmente estou no último ano de Ciência da Computação
                 na UNIFIL e esse é meu Portfólio :)
               </p>
             </CardContent>
@@ -133,10 +133,12 @@ const Index = () => {
                 <p className="text-sm text-muted-foreground mb-4">
                   Desenvolvimento da pesquisa "Como a Inteligência Artificial Impacta no Mercado de Trabalho e na Empregabilidade"
                 </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                </div>
                  <Button variant="outline" size="sm" className="w-full" asChild>
                     <a href="https://drive.google.com/file/d/1hNYSiN7Ez3Icbwt7bpmZYBN7ZkRvvRAU/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" />
-                      Ver TCC Completo
+                      Ver Trabalho
                     </a>
                 </Button>
               </CardContent>
@@ -160,7 +162,7 @@ const Index = () => {
                 <Button variant="outline" size="sm" className="w-full" asChild>
                     <a href="https://github.com/GabrielMendesR/ProjetoEstagio" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" />
-                      Ver TCC Completo
+                      Ver Projeto
                     </a>
                 </Button>
               </CardContent>
@@ -184,7 +186,7 @@ const Index = () => {
                 <Button variant="outline" size="sm" className="w-full" asChild>
                     <a href="https://github.com/GabrielMendesR/WebSite_ONG" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" />
-                      Ver TCC Completo
+                      Ver Projeto
                     </a>
                 </Button>
               </CardContent>
@@ -214,7 +216,7 @@ const Index = () => {
                 <Button variant="outline" size="sm" className="w-full" asChild>
                     <a href="https://github.com/GabrielMendesR/Trabalho-Compiladores-Algoritimo-LR-0-" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" />
-                      Ver TCC Completo
+                      Ver Trabalho
                     </a>
                 </Button>
               </CardContent>
@@ -236,7 +238,7 @@ const Index = () => {
                  <Button variant="outline" size="sm" className="w-full" asChild>
                     <a href="https://colab.research.google.com/drive/1-4bUzc7iZTnv4hYy5G-yjLQjbJSnQfJ_#scrollTo=-W88oPjlFUSS" target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" />
-                      Ver TCC Completo
+                      Ver Trabalho
                     </a>
                 </Button>
               </CardContent>
@@ -248,7 +250,7 @@ const Index = () => {
       {/* Eventos */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl font-bold mb-8 text-center">Hackathons & Eventos</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Eventos</h2>
           
           <div className="space-y-6">
             <Card>
