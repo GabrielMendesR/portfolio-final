@@ -6,30 +6,27 @@ import { Github, Linkedin, Mail, ExternalLink, Award, Code, BookOpen, Briefcase 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-  {/* Cabecalho */}
   <section className="relative py-20 px-4 bg-gradient-to-br from-primary/10 via-background to-accent/10">
     <div className="container mx-auto max-w-6xl">
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-        <div className="w-48 h-48 rounded-full bg-muted border-4 border-primary/20 shadow-lg overflow-hidden">
-          <img 
-            src="../../public/foto_perfil.jpg" 
-            alt="Foto Perfil" 
-            className="w-full h-full object-cover"
-          />
-        </div>
-        
-        <div className="flex-1 text-center md:text-left">
-          <div className="mb-4 inline-block">
-            <div className="w-32 h-32 bg-muted rounded-lg flex items-center justify-center p-2">
-              <img 
-                src="../../public/UNIFILlogo.png" 
-                alt="Logo Unifil" 
-                className="w-full h-full object-contain"
-              />
-            </div>
-            <span>UNIFIL</span>
+        <div className="flex flex-col sm:flex-row items-center gap-8">
+          <div className="w-48 h-48 rounded-full bg-muted border-4 border-primary/20 shadow-lg overflow-hidden">
+            <img 
+              src="/foto_perfil.jpg" 
+              alt="Foto Perfil" 
+              className="w-full h-full object-cover"
+            />
           </div>
-          
+          <div className="w-48 h-48 bg-muted rounded-lg flex items-center justify-center p-2">
+            <img 
+              src="/UNIFILlogo.png" 
+              alt="Logo Unifil" 
+              className="w-full h-full object-contain"
+            />
+          </div>
+        </div>
+
+        <div className="flex-1 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Gabriel Mendes Rodrigues
           </h1>
