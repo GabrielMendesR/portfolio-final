@@ -33,7 +33,9 @@ const Index = () => {
           <p className="text-xl text-muted-foreground mb-6">
             Estudante de Ciência da Computação | Desenvolvedor
           </p>
-          
+          <p className="text-xl text-muted-foreground mb-6">
+            Centro Universitário Filadélfia - UniFil
+          </p>          
           <div className="flex gap-4 justify-center md:justify-start">
             <Button variant="default" size="lg" asChild>
               <a href="https://github.com/GabrielMendesR" target="_blank" rel="noopener noreferrer">
