@@ -262,7 +262,7 @@ const Index = () => {
                 <CardDescription>17/03/2023 a 19/03/2023</CardDescription>
               </CardHeader>
               <CardContent>
-                <img src="/CertificadoIdeathon.png" alt="Certificado" />
+                <img src="CertificadoIdeathon.png"  alt="Certificado"></img>
               </CardContent>
             </Card>
 
@@ -275,10 +275,11 @@ const Index = () => {
                 <CardDescription>14/04/2023 a 16/04/2023</CardDescription>
               </CardHeader>
               <CardContent>
-                <img src="/CertificadoHackathon.png" alt="Certificado" />
+                <img src="CertificadoHackathon.png" alt="Certificado"></img>
               </CardContent>
             </Card>
           </div>
+        </div>
       </section>
 
       {/* Footer */}
