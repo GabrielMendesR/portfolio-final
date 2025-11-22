@@ -31,7 +31,7 @@ const Index = () => {
             Gabriel Mendes Rodrigues
           </h1>
           <p className="text-xl text-muted-foreground mb-6">
-            Estudante de Ciência da Computação | Desenvolvedor<br>Centro Universitário Filadélfia - UniFil
+            Estudante de Ciência da Computação | Desenvolvedor
           </p>
           
           <div className="flex gap-4 justify-center md:justify-start">
